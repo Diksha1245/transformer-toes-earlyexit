@@ -1,0 +1,44 @@
+# Token-Adaptive Early Exit Configuration and Results Log
+# Updated: 2025-08-06
+
+## Current Parameters (Baseline)
+vocab_size = 1000
+hidden_size = 256
+num_layers = 6
+num_decoder_layers = 6
+num_heads = 8
+max_candidates = 50
+early_exit_threshold = 0.5
+learning_rate = 2e-5
+batch_size = 8
+num_epochs = 2
+sequence_length = 128
+
+## Performance Metrics (Last Run)
+GPT_ToEx_Loss = 6.9199
+GPT_Baseline_Loss = 7.0911
+Transformer_ToEx_Loss = 6.9176
+Transformer_Baseline_Loss = 7.0859
+Early_Exit_Rate = 0.0%
+Computational_Savings = 0.0%
+
+## Issues Identified
+1. Early exit threshold too high (0.5) - no exits triggered
+2. Need accuracy metric instead of just loss
+3. Missing exit speed analysis
+4. No token-level exit tracking
+5. Need more aggressive threshold tuning
+
+## Optimization Targets
+1. Reduce loss by 10-15%
+2. Achieve 20-40% early exit rate
+3. Maintain or improve accuracy
+4. Track exit latency and token patterns
+5. Implement dynamic threshold adjustment
+
+## Next Optimizations
+- Lower early_exit_threshold from 0.5 to 0.2-0.3
+- Add accuracy calculation
+- Implement per-token exit tracking
+- Add exit speed measurements
+- Include confidence distribution analysis

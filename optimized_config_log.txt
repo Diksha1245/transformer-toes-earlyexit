@@ -1,0 +1,41 @@
+
+============================================================
+EXPERIMENT LOG - 2025-08-07 00:02:01
+============================================================
+
+🔧 OPTIMIZED PARAMETERS:
+   vocab_size = 1000
+   hidden_size = 384
+   num_layers = 10
+   num_heads = 12
+   early_exit_threshold = 0.15
+   max_candidates = 100
+   dropout_rate = 0.08
+
+📊 PERFORMANCE RESULTS:
+   ToEx Model:
+     • Loss: 6.9078
+     • Accuracy: 0.00%
+     • Avg Layers Used: 2.0
+     • Early Exit Rate: 100.0%
+     • Computational Savings: 80.0%
+     • Avg Exit Time: 3.6983s
+
+   Baseline Model:
+     • Loss: 6.9078
+     • Accuracy: 0.26%
+     • Avg Layers Used: 10.0
+     • Early Exit Rate: 0.0%
+     • Computational Savings: 0.0%
+     • Avg Exit Time: 0.0000s
+
+🎯 ANALYSIS:
+   • Loss Improvement: 0.00%
+   • Accuracy Change: -0.26%
+   • Exit Effectiveness: 100.0% early exits
+   • Speed Improvement: 80.0% computational savings
+
+💡 RECOMMENDATIONS:
+   • Increase hidden_size or num_layers for better representation
+   • Next suggested threshold: 0.10
+
